@@ -9,7 +9,7 @@ body {
     text-align: center;
   }
   img {
-    width: 210px;
+    width: 250px;
     }
 
   h1 {
@@ -35,7 +35,7 @@ body {
   li {
     display: block;
     text-align: left;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 2;
 
   }
