@@ -1,0 +1,61 @@
+body {
+  background-color: pink;
+}
+
+  main {
+    display: block;
+    margin: 0% 35% 10% 35%;
+    text-align: center;
+  }
+  img {
+    width: 210px;
+    }
+
+  h1 {
+    font-size: 60px;
+    display: inline; /* the default for span */
+    width: 100px;
+    height: 100px;
+    border: solid pink;  
+  }
+
+  h1, p {
+    color: white;
+  }
+
+  content h1 {
+    font-size: 50px;
+  }
+
+  text h2 {
+    color: white;
+  }
+
+  li {
+    display: block;
+    text-align: left;
+    font-size: 12px;
+    line-height: 2;
+  }
+
+  ol {
+    list-style-position: outside;
+  }
+  
+  text h1:hover {
+    color: black;
+  }
+  
+  content p {
+    color: black;
+  }
+
+  main p, main h1{
+    text-align: center;
+  }
+
+
+
+
+
+
