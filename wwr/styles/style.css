@@ -1,8 +1,8 @@
 body {
-    background-color: #ececec;
+    background-color: white;
 }
   header {
-    background-color:rgba(20,30,13, .7);
+    background-color:#87CEFA;
   }
 
   div {
@@ -13,8 +13,16 @@ body {
     width: 80px;
   }
 
+  #hero-msg {
+    text-align: center;
+  }
+
   #content {
     margin: 0 auto;
+  }
+
+  #hero-img {
+    width: 1600px;
   }
   
   nav a {
@@ -24,7 +32,7 @@ body {
   }
 
   nav a:hover {
-    background-color: blue;
+    background-color: #A9A9A9;
     color: black;
   }
 
@@ -40,10 +48,11 @@ body {
     background-color: white;
     color: black;
     text-decoration: none;
+    text-align: center;
   }
 
   .book:hover, .join:hover {
-    background-color: white;
+    background-color: #A9A9A9;
     color: black;
   }
 
@@ -73,15 +82,15 @@ body {
 
   #background {
     height: 725px;
-    background-color: white;
+    background-color: #FF0000;
   }
 
   .msg {
-    background-color: white;
+    background-color: #A9A9A9;
   }
 
   footer {
-    background-color: white;
+    background-color: #A9A9A9;
     color:black;
   }
 
@@ -99,6 +108,6 @@ body {
   }
 
   footer a:hover {
-    background-color: white;
+    background-color: #A9A9A9;
     color: black;
   }
