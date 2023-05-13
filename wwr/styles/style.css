@@ -85,6 +85,10 @@ body {
     background-color: #FF0000;
   }
 
+  #mountains {
+    width: 50%;
+  }
+
   .msg {
     background-color: #A9A9A9;
   }
