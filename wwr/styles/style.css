@@ -1,8 +1,27 @@
-body {
-    background-color: white;
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Special+Elite&display=swap');
+
+:root {
+  --primary-color: #87CEFA;
+  --secondary-color: #A9A9A9;
+  --accent1-color: #008000;
+  --accent2-color: #FF0000;
+
+  --heading-font: "Special Elite";
+  --paragraph-font: "DM Serif Text", "Helvetica", "sans-serif";
 }
+
+  body {
+      background-color: white;
+      font-family: var(--paragraph-font);
+      margin: 0;
+      padding: 0;
+  }
   header {
     background-color:#87CEFA;
+  }
+
+  #logo_link {
+    padding-top: 5px;
   }
 
   div {
@@ -11,10 +30,12 @@ body {
 
   .icon {
     width: 80px;
+    padding-top: 10px;
   }
 
   #hero-msg {
     text-align: center;
+    font-family: var(--heading-font);
   }
 
   #content {
@@ -29,6 +50,7 @@ body {
     text-align: center;
     color: black;
     text-decoration: none;
+    padding: 35px;
   }
 
   nav a:hover {
@@ -38,17 +60,28 @@ body {
 
   .home-title {
     color:black; 
+    font-size: 2em;
+    margin-top: 10px;
   }
 
   h4 {
     color: black;
   } 
 
+  #hero {
+    border: 1px solid #A9A9A9;
+    padding-bottom: 50px;
+  }
+
   .book, .join {
     background-color: #A9A9A9;
     color: black;
     text-decoration: none;
     text-align: center;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
   }
 
   .book:hover, .join:hover {
@@ -56,16 +89,12 @@ body {
     color: black;
   }
 
+  .card-img {
+    border: 10px solid #008000;
+  }
+
   #hero-msg h1, #hero-msg h4 {
     text-align: center;
-  }
-
-  .msg h2 {
-    color: black;
-  }
-
-  .msg p {
-    color: black;
   }
 
   h4 {
@@ -75,9 +104,17 @@ body {
   .button-box {
     text-align: center;
   }
+
+  .rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+  }
   
   main section {
     text-align: center;
+  }
+
+  main section img {
+    box-sizing: border-box;
   }
 
   #background {
@@ -87,15 +124,31 @@ body {
 
   #mountains {
     width: 50%;
+    padding: 50px 0px 80px 0px; 
   }
 
   .msg {
-    background-color: #A9A9A9;
+    background-color: #87CEFA;
+    line-height: 1.5em;
+    padding: 35px;
+  }
+
+  .msg h2 {
+    color: black;
+    padding: 0px;
+  }
+
+  .msg p {
+    color: black;
+    font-size: .8em;
+    padding-bottom: 15px;
   }
 
   footer {
-    background-color: #A9A9A9;
+    background-color: #87CEFA;
     color:black;
+    padding: 25px 50px;
+    margin-top: 200px;
   }
 
   footer p {
@@ -114,4 +167,8 @@ body {
   footer a:hover {
     background-color: #008000;
     color: black;
+  }
+
+  footer .social img {
+    padding-top: 15px;
   }
