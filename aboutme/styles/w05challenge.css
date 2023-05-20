@@ -1,0 +1,34 @@
+body {
+    background-color: gray;
+}
+  #content {
+      background-color: gray;
+  }
+
+  img.logo {
+    width: 100%;
+  }
+#content {
+    padding: 0px;
+    text-align: center;
+}
+  img.desk {
+    width: 15%;
+    border-radius: 50%;
+    border: solid 20px rgb(78, 78, 78);
+    margin: 5%;
+    }
+
+  img.graphic {
+    width: 15%;
+    border-radius: 50%;
+    border: solid 20px rgb(78, 78, 78);
+    margin: 5%;
+  }
+
+  img.person {
+    width: 15%;
+    border-radius: 50%;
+    border: solid 20px rgb(78, 78, 78);
+    margin: 5%;
+  }
