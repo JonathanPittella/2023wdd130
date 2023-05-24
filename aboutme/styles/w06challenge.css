@@ -1,0 +1,34 @@
+aside {
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: 50px 50px;
+}
+
+img{
+  width: 80px;
+  grid-column-start: 1;
+  grid-row: 1;
+}
+
+h1 {
+  grid-column: 1/5;
+  grid-row: 1;
+  z-index: 1;
+  font-size: 35px;
+  margin-top: 10px;
+}
+
+p {
+  grid-row: 2/3;
+  grid-column: 3/5;
+  text-align: center;
+  color: red;
+  z-index: 1;
+}
+
+#background {
+  background-color: rgb(176, 179, 182);
+  grid-column: 3/5;
+  grid-row: 1/3;
+}
+  
