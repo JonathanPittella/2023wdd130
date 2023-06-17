@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W09 Challenge</title>
+    <link rel="stylesheet" href="styles/w09challenge.css">
+</head>
+<body>
+    <div>
+        <img src="images/w09_ice_img.jpg" alt="City Challenge">
+        <h3>3 weeks ago</h3>
+        <h1>Post Three</h1>
+        <p>This would be some text to go here and tell you about this awesome article that they should definitely read. This would be some text to go here and tell you about this awesome article that they should definitelyread. This would be some text to go here.</p>    
+        <footer>
+            <script>
+                // Variáveis para os contadores
+                var contadorPagina = 0;
+                var contadorMateria = 0;
+                var contadorComentarios = 0;
+            
+                // Função para atualizar os contadores
+                function atualizarContadores() {
+                  // Incrementa os contadores
+                  contadorPagina++;
+                  contadorMateria++;
+                  contadorComentarios++;
+            
+                  // Atualiza os elementos HTML com os contadores
+                  document.getElementById("contador-pagina").innerHTML = contadorPagina;
+                  document.getElementById("contador-materia").innerHTML = contadorMateria;
+                  document.getElementById("contador-comentarios").innerHTML = contadorComentarios;
+                }
+            
+                // Chama a função para atualizar os contadores quando a página é carregada
+                window.onload = atualizarContadores;
+              </script>
+              <p class="read">
+                <span id="contador-pagina">0</span>
+                <br>
+                READ
+              </p>
+              <p class="views">
+                <span id="contador-materia">0</span>
+                <br>
+                VIEWS
+              </p>
+              <p class="comments">
+                <span id="contador-comentarios">0</span>
+                <br>
+                COMMENTS
+              </p>
+        </footer>
+        </div>
+    </body>
+</html>
