@@ -84,6 +84,10 @@ div {
   margin: 0 auto;
 }
 
+#content h1 {
+  color: white;
+}
+
 nav {
   display: flex;
   justify-content: space-around;
