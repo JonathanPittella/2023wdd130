@@ -1,91 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infsoft Contact Us</title>
-</head>
-<body>
-    <script>
-        function submitForm() {
-          // Get form values
-          var name = document.getElementById('name').value;
-          var email = document.getElementById('email').value;
-          var message = document.getElementById('message').value;
-    
-          // Validate form fields
-          if (name === '' || email === '' || message === '') {
-            alert('Please fill in all the fields.');
-            return;
-          }
-    
-          // Create a new XMLHttpRequest object
-          var xhr = new XMLHttpRequest();
-    
-          // Prepare the POST request
-          xhr.open('POST', 'contact.php', true);
-          xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-    
-          // Send the request
-          xhr.onreadystatechange = function() {
-            if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-              // Request was successful
-              alert('Thank you for contacting us. We will get back to you soon!');
-              // Reset the form
-              document.getElementById('contact-form').reset();
-            }
-          };
-    
-          // Prepare the data to be sent
-          var data = 'name=' + encodeURIComponent(name) +
-                     '&email=' + encodeURIComponent(email) +
-                     '&message=' + encodeURIComponent(message);
-    
-          // Send the request
-          xhr.send(data);
-        }
-      </script>
-    </head>
-    <body>
-      <h1>Contact Us</h1>
-      <form id="contact-form">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ContactUs</title>
+  <style>
+    form {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 400px;
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  }
+  
+  ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  }
+  
+  form li + li {
+  margin-top: 1em;
+  }
+  
+  label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+  }
+  
+  input,
+  textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+  
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+  
+  /* Match form field borders */
+  border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+  }
+  
+  textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+  
+  /* Provide space to type some text */
+  height: 5em;
+  }
+  
+  .button {
+  /* Align buttons with the text fields */
+  padding-left: 90px; /* same size as the label elements */
+  }
+  
+  button {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+  margin-left: 0.5em;
+  }
+  </style>
+  </head>
+  <body>
+  <form action="/my-handling-form-page" method="post">
+    <ul>
+      <li>
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
-    
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-    
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea><br><br>
-    
-        <button type="button" onclick="submitForm()">Submit</button>
-      </form>
-      <p>When you submit the contact form on our website, we collect certain information from you to ensure a smooth communication process. Rest assured that we value your privacy and handle your data responsibly.
+        <input type="text" id="name" name="user_name" />
+      </li>
+      <li>
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="user_email" />
+      </li>
+      <li>
+        <label for="msg">Message:</label>
+        <textarea id="msg" name="user_message"></textarea>
+      </li>
+      <li class="button">
+        <button type="submit">Send your message</button>
+      </li>
+    </ul>
+  </form> 
+  <p>When you submit the contact form on our website, we collect certain information from you to ensure a smooth communication process. Rest assured that we value your privacy and handle your data responsibly.
 
-        The information you provide, such as your name and email address, allows us to effectively respond to your inquiries and provide the assistance you need. We use your name to address you personally and your email address to reach out to you directly. By sharing your message with us, we can understand your requirements and provide tailored solutions.
-        
-        Please be aware that we treat your contact information with the utmost confidentiality. We do not sell, rent, or share your personal data with any third parties without your explicit consent. Your information is strictly used for the purpose of corresponding with you regarding your inquiries, offering relevant information about our services, or updating you on any relevant news or promotions.
-        
-        If at any point you wish to have your information removed from our records, you can contact us directly, and we will promptly comply with your request. Our commitment to data security ensures that your information is protected through industry-standard measures to prevent unauthorized access or disclosure.
-        
-        We appreciate your trust in providing us with your contact information, and we assure you that we handle it with the utmost care and respect. Our goal is to deliver exceptional customer service and maintain a long-lasting relationship with you based on trust, transparency, and mutual respect.</p>
-      </p>
-      <img src="images/open.jpg" alt="Open" width="500px">
-      <img src="images/yougot.jpg" alt="You Got This" width="500px">
-      <footer>
-        <p>&copy; Jonathan Pittella | All rights reserved, a BYU-I Student project
-        <a href="siteplan.html" target="_blank">Site Plan</a>
-        <div class="social">
-          <a href="https://facebook.com" target="_blank">
-              <img src="images/facebook.png" alt="fb icon">
-          </a>
-          <a href="https://twitter.com" target="_blank">
-              <img src="images/twitter.png" alt="twitter icon">
-          </a>
-          <a href="https://instagram.com" target="_blank">
-              <img src="images/instagram.png" alt="instagram icon">
-          </a>
-      </div>
-      </footer>
+    The information you provide, such as your name and email address, allows us to effectively respond to your inquiries and provide the assistance you need. We use your name to address you personally and your email address to reach out to you directly. By sharing your message with us, we can understand your requirements and provide tailored solutions.
+    
+    Please be aware that we treat your contact information with the utmost confidentiality. We do not sell, rent, or share your personal data with any third parties without your explicit consent. Your information is strictly used for the purpose of corresponding with you regarding your inquiries, offering relevant information about our services, or updating you on any relevant news or promotions.
+    
+    If at any point you wish to have your information removed from our records, you can contact us directly, and we will promptly comply with your request. Our commitment to data security ensures that your information is protected through industry-standard measures to prevent unauthorized access or disclosure.
+    
+    We appreciate your trust in providing us with your contact information, and we assure you that we handle it with the utmost care and respect. Our goal is to deliver exceptional customer service and maintain a long-lasting relationship with you based on trust, transparency, and mutual respect.</p>
+  </p>
+  <img src="images/open.jpg" alt="Open" width="500px">
+  <img src="images/yougot.jpg" alt="You Got This" width="500px">
+  <footer>
+    <p>&copy; Jonathan Pittella | All rights reserved, a BYU-I Student project
+    <a href="siteplan.html" target="_blank">Site Plan</a>
+    <div class="social">
+      <a href="https://facebook.com" target="_blank">
+          <img src="images/facebook.png" alt="fb icon">
+      </a>
+      <a href="https://twitter.com" target="_blank">
+          <img src="images/twitter.png" alt="twitter icon">
+      </a>
+      <a href="https://instagram.com" target="_blank">
+          <img src="images/instagram.png" alt="instagram icon">
+      </a>
+  </div>
+  </footer>
 </body>
 </html>
