@@ -173,3 +173,9 @@ nav a:hover {
   border-top: 1px solid;
   border-right: 1px solid;
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}

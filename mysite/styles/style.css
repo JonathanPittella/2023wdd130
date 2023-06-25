@@ -1,0 +1,129 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a | */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Special+Elite&display=swap');
+
+:root {
+  --primary-color: #396e94;
+  --secondary-color: #e7c24f;
+  --accent1-color: #a43312;
+  --accent2-color: #381d2a;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Special Elite";
+  --paragraph-font: "DM Serif Text", "Helvetica", "sans-serif";
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #396e94;  /* headlines on a white background */ 
+  --headline-color-on-color: white; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #396e94; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #396e94;
+  --nav-link-color: #396e94;
+  --nav-background-color: #d4ac0d;
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: #396e94;
+}
+
+    form {
+      margin: 0 auto;
+      width: 400px;
+      padding: 1em;
+      border: 1px solid #ccc;
+      border-radius: 1em;
+    }
+    
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    form li + li {
+      margin-top: 1em;
+    }
+    
+    label {
+      display: inline-block;
+      width: 90px;
+      text-align: right;
+    }
+    
+    input,
+    textarea {
+      font: 1em sans-serif;
+      width: 300px;
+      box-sizing: border-box;
+      border: 1px solid #999;
+    }
+    
+    input:focus,
+    textarea:focus {
+      border-color: #000;
+    }
+    
+    textarea {
+      vertical-align: top;
+      height: 5em;
+    }
+    
+    .button {
+      padding-left: 90px;
+    }
+    
+    button {
+      margin-left: 0.5em;
+    }
+
+    /* CSS styles for the feedback message */
+    #feedback {
+      background-color: antiquewhite;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 0.5em;
+      display: none;
+    }
+    
+    .moveDown {
+      margin-top: 3em;
+    }
+    
+    /* CSS styles for the images */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    /* CSS styles for the footer */
+    footer {
+      text-align: center;
+      padding: 1em;
+      background-color: #f1f1f1;
+    }
+    
+    footer p {
+      margin: 0;
+    }
+    
+    .social {
+      margin-top: 1em;
+    }
+    
+    .social img {
+      width: 24px;
+      height: 24px;
+      margin: 0 0.5em;
+      vertical-align: middle;
+    }
+
+    /*CSS for the FAQ*/
+    .question {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .answer {
+      margin-bottom: 20px;
+    }
