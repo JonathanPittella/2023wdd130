@@ -108,6 +108,8 @@ button {
 
 }
 
+/*index pictures*/
+
 .logo{
   width: 200px;
 }
@@ -125,5 +127,11 @@ button {
 }
 
 .teamwork-img{
+  width: 600px;
+}
+
+/*FAQ pictures*/
+
+.specialize {
   width: 600px;
 }
