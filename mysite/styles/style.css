@@ -140,6 +140,26 @@ button {
   width: 600px;
 }
 
+.faq-item {
+  width: 100%;
+}
+
+.custom-img{
+  width: 500px;
+}
+
+.mobile-img {
+  width: 500px;
+}
+
+.time-img {
+  width: 500px;
+}
+
+.pricing-img{
+  width: 500px;
+}
+
 /*Image for Contact Us*/
 
 .open-img{
