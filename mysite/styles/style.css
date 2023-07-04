@@ -298,7 +298,7 @@ footer a:hover{
 /* The progress bar (scroll indicator) */
 .progress-bar {
   height: 8px;
-  background: #04AA6D;
+  background: var(--accent2-color);
   width: 0%;
 }
 
