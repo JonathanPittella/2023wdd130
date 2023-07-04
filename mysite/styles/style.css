@@ -252,7 +252,7 @@ button {
 /*FAQ pictures*/
 
 .specialize {
-  width: 600px;
+  width: 500px;
 }
 
 .yougot-img {
@@ -274,4 +274,50 @@ footer{
 footer a:hover{
   color: var(--secondary-color);
   text-decoration: none;
+}
+
+
+/*W12 Web Components*/
+
+/* Style the header: fixed position (always stay at the top) */
+.theheader {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #04AA6D;
+  width: 0%;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 80px; /* Place the button at the bottom of the page */
+  right: 39px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
 }

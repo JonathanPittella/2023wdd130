@@ -8,16 +8,21 @@
 </head>
 <body>
   <div id="content">
-    <header>
-      <a id="logo_link" href="index.html">
-        <img class="logo" alt="Logo image" src="images/personal_logo.png">
-      </a>
-      <nav class="topnav">
-        <a href="index.html">Home</a>
-        <a href="contactus.html">Contact Us</a>
-        <a href="faq.html">FAQ</a>
-      </nav>
-    </header>
+    <div class="theheader">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+      <header>
+        <a id="logo_link" href="index.html">
+          <img class="logo" alt="Logo image" src="images/personal_logo.png">
+        </a>
+        <nav class="topnav">
+          <a href="index.html">Home</a>
+          <a href="contactus.html">Contact Us</a>
+          <a href="faq.html">FAQ</a>
+        </nav>
+      </header>
+    </div>
     <div id="programming-box">
       <div id="programming">  
         <img class="questioning-image" src="images/programming.jpg" alt="HTML code on Screen">
@@ -121,7 +126,9 @@
                 <img src="images/instagram.png" alt="Instagram icon">
             </a>
         </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     </footer>
   </div>
+  <script src="js/myscript.js"></script> <script src="js/myscript1.js"></script>
 </body>
 </html>
