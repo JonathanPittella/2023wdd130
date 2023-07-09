@@ -1,28 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact US</title>
+  <title>InfSoftware</title>
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
   <div id="content">
-    <header>
-      <a id="logo_link" href="index.html">
-        <img class="logo" alt="Logo image" src="images/personal_logo.png">
-      </a>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="contactus.html">Contact Us</a>
-        <a href="faq.html">FAQ</a>
-      </nav>
-    </header>
+    <div class="theheader">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+    </div>
+      <header>
+        <a id="logo_link" href="index.html">
+          <img class="logo" alt="Logo image" src="images/personal_logo.png">
+        </a>
+        <nav class="topnav">
+          <a href="index.html">Home</a>
+          <a href="contactus.html">Contact Us</a>
+          <a href="faq.html">FAQ</a>
+        </nav>
+      </header>
     <div id="yougot-box">
       <div id="yougot">
         <img class="yougot-img" src="images/yougot.jpg" alt="You Got This">
       </div>
-        <p>
+        <p class="contactus-txt">
           When you submit the contact form on our website, we collect certain information from you to ensure 
           a smooth communication process. Rest assured that we value your privacy and handle your data responsibly.
           The information you provide, such as your name and email address, allows us to effectively respond to 
@@ -41,8 +44,8 @@
           long-lasting relationship with you based on trust, transparency, and mutual respect.
         </p>
     </div>
-    <div id="facebook">
-        <form class="contactus-form" action="/my-handling-form-page" method="post">
+    <div id="section">
+        <form class="contactus_form" action="/my-handling-form-page" method="post">
           <div>
             <label for="name">Name:</label>
             <input type="text" id="name" name="user_name">
@@ -59,10 +62,22 @@
             <button type="submit">Send your message</button>
           </div>
         </form>
-      <div id="open-box">  
-        <img class="open-img" src="images/open.jpg" alt="Open">
-      </div>  
-    </div>
+        <div id="open-box">  
+          <img class="open-img" src="images/open.jpg" alt="Open">          
+        </div>
+        <form class="feedback_form" action="/feedback-form-page" method="post">
+        <h2>Give Us Your Feedback</h2>
+        <label for="comments">Comments:</label>
+        <textarea name="user_comments" id="your_comments"></textarea>
+        <div class="button">
+        <button class="submit_button" type="submit">Submit Your Feedback</button>
+        </div>
+        </form>
+        <div id="gif-box">
+          <img id="gifImage" class="gif_image" src="images/yougot.jpg" alt="GIF">
+        </div>                
+      </div>
+      <br></div>
     <footer>
       <p>InfSoftware &copy; 2023 - Jonathan Pittella</p>
       <p><a href="contactus.html">Contact Us</a></p>
@@ -78,11 +93,11 @@
               <img src="images/instagram.png" alt="Instagram icon">
           </a>
       </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     </footer> 
   </div>  
 
   <div id="feedback"></div>
-
-  <script src="script.js"></script>
+  <script src="js/myscript.js"></script> <script src="js/myscript1.js"></script> <script src="js/myscript1.js"></script> <script src="js/myscript2"></script>
 </body>
 </html>
