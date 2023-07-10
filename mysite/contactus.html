@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -65,14 +67,15 @@
         <div id="open-box">  
           <img class="open-img" src="images/open.jpg" alt="Open">          
         </div>
-        <form class="feedback_form" action="/feedback-form-page" method="post">
-        <h2>Give Us Your Feedback</h2>
-        <label for="comments">Comments:</label>
-        <textarea name="user_comments" id="your_comments"></textarea>
-        <div class="button">
-        <button class="submit_button" type="submit">Submit Your Feedback</button>
-        </div>
-        </form>
+        <form id="feedback_form" action="/feedback-form-page" method="post">
+          <h2>Give Us Your Feedback</h2>
+          <label for="message">Feedback:</label>
+          <textarea name="user_feedback" id="message"></textarea>
+          <div class="button">
+            <button class="submit_button" type="submit">Submit Your Feedback</button>
+          </div>
+        </form>      
+        
         <div id="gif-box">
           <img id="gifImage" class="gif_image" src="images/yougot.jpg" alt="GIF">
         </div>                
@@ -95,9 +98,8 @@
       </div>
       <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     </footer> 
-  </div>  
-
+  </div>
   <div id="feedback"></div>
-  <script src="js/myscript.js"></script> <script src="js/myscript1.js"></script> <script src="js/myscript1.js"></script> <script src="js/myscript2"></script>
+  <script src="script.js"></script> <script src="js/script1.js"></script> <script src="js/myscript.js"></script> <script src="js/myscript1.js"></script> <script src="js/myscript2.js"></script>
 </body>
 </html>

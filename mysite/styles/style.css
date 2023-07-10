@@ -184,7 +184,7 @@ label {
   /* To make sure that all label have the same size and are properly align */
   display: inline-block;
   width: 90px;
-  text-align: right;
+  text-align: left;
 }
 
 input,
@@ -224,6 +224,7 @@ textarea {
 .button {
   /* To position the buttons to the same position of the text fields */
   padding-left: 90px; /* same size as the label elements */
+  margin: 0px;
 }
 
 button {
@@ -249,7 +250,6 @@ button {
 .specialize {
   width: 500px;
 }
-
 
 /*Image for Contact Us*/
 
@@ -288,7 +288,7 @@ button {
   grid-row: 1/2;
 }
 
-#name, #mail, #msg {
+#name, #mail, #msg, #message {
   border: solid 3px var(--accent2-color);
   border-radius: 10px;
 }
@@ -299,11 +299,12 @@ button {
 
 /*Feedback form*/
 
-.feedback_form {
+#feedback_form {
   border-radius: 10px;
   grid-column: 2/4;
   grid-row: 3/5;
   width: 95%;
+  text-align: left;
 }
 
 #gif-box {
