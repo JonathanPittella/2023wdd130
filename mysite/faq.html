@@ -3,52 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Infsoft FAQ</title>
+  <title>InfSoftware</title>
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
   <div id="content">
-    <header>
-      <a id="logo_link" href="index.html">
-        <img class="logo" alt="Logo image" src="images/personal_logo.png">
-      </a>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="contactus.html">Contact Us</a>
-        <a href="faq.html">FAQ</a>
-      </nav>
-    </header>
-    <main class="faq-grid">
+    <div class="theheader">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+    </div>
+      <header>
+        <a id="logo_link" href="index.html">
+          <img class="logo" alt="Logo image" src="images/personal_logo.png">
+        </a>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="contactus.html">Contact Us</a>
+          <a href="faq.html">FAQ</a>
+        </nav>
+      </header>
+    <main class="faq-grid">   
       <h1>Frequently Asked Questions</h1>
-    
-      <div class="faq-item">
-        <img class="faq-img" src="images/specialize.jpg" alt="programming specialize">
-        <div class="specialize">What programming languages do you specialize in?</div>
-        <div class="specialize-answer">We specialize in a wide range of programming languages, including Java, C++, Python, JavaScript, and more.</div>
-      </div>
-    
-      <div class="faq-custom">
+      <div id="custom-box">
         <img class="custom-img" src="images/custom.jpg" alt="custom development">
-        <div class="services">Do you offer custom software development services?</div>
-        <div class="services-answer">Yes, we offer custom software development services tailored to meet your specific needs and requirements.</div>
+        <div class="container">
+          <button class="services">Do you offer custom software development services?</button>
+            <div class="answer">
+              <p>Yes, we offer custom software development services tailored to meet your specific needs and requirements.</p>
+            </div>
+        </div>
+      </div>
+
+      <div id="faq-box">
+        <img class="faq-img" src="images/specialize.jpg" alt="programming specialize">
+        <div class="container">  
+          <button class="services">What programming languages do you specialize in?</button>
+          <div class="answer">
+            <p>We specialize in a wide range of programming languages, including Java, C++, Python, JavaScript, and more.</p>    
+          </div>
+        </div>
       </div>
     
-      <div class="faq-mobile">
+      <div id="faq-mobile">
         <img class="mobile-img" src="images/mobile.jpg" alt="mobile development">
-        <div class="mobile">Can you help with mobile app development?</div>
-        <div class="mobile-answer">Absolutely! We have expertise in developing mobile apps for both iOS and Android platforms.</div>
+        <div class="container">
+          <button class="services">Can you help with mobile app development?</button>
+          <div class="answer">
+            <p>Absolutely! We have expertise in developing mobile apps for both iOS and Android platforms.</p>
+          </div>
+        </div>
       </div>
     
-      <div class="faq-time">
+      <div id="faq-time">
         <img class="time-img" src="images/howlong.jpg" alt="how long time">
-        <div class="long">How long does it typically take to develop a software application?</div>
-        <div class="long-answer">The development time can vary depending on the complexity and scope of the project. We work closely with our clients to establish realistic timelines and ensure timely delivery.</div>
+        <div class="container">
+          <button class="services">How long does it typically take to develop a software application?</button>
+          <div class="answer">
+            <p>The development time can vary depending on the complexity and scope of the project. We work closely with our clients to establish realistic timelines and ensure timely delivery.</p>
+          </div>
+        </div>
       </div>
     
-      <div class="faq-pricing">
+      <div id="faq-pricing">
         <img class="pricing-img" src="images/pricing.jpg" alt="pricing model">
-        <div class="pricing">What is your pricing model?</div>
-        <div class="pricing-answer">Our pricing model is based on factors such as project complexity, size, and duration. We provide detailed cost estimates after assessing your requirements.</div>
+        <div class="container">
+          <button class="services">What is your pricing model?</button>
+          <div class="answer">
+            <p>Our pricing model is based on factors such as project complexity, size, and duration. We provide detailed cost estimates after assessing your requirements.</p>
+          </div>
+        </div>  
       </div>
     </main>
     <footer>
@@ -66,7 +90,9 @@
               <img src="images/instagram.png" alt="Instagram icon">
           </a>
       </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   </footer>
-  </div>
+</div>
+<script src="js/myscript.js"></script> <script src="js/myscript1.js"></script> <script src="js/myscript3.js"></script>
 </body>
 </html>
