@@ -367,3 +367,55 @@ footer .social-icons img {
 }
 
 /* Contact Us.css */
+
+#section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#contact-form {
+  grid-column: 2/3;
+}
+
+#content h1 {
+  color: black;
+  text-align: center;
+  grid-column: 2/3;
+}
+
+form {
+  margin: 0 auto;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  background-color: #999;
+}
+
+label {
+  display: inline-block;
+  text-align: left;
+}
+
+input,
+textarea {
+  font: 1em sans-serif;
+  width: 500px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #000;
+}
+
+button {
+  text-align: left;
+  margin: 0px;
+}
+
+#name, #email, #message {
+  border: var(--accent1-color) 1px solid;
+  border-radius: 10px;
+}
