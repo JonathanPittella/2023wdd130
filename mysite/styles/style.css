@@ -27,8 +27,8 @@ Fonts are separated by a | */
 
 body{
   font-family: var(--paragraph-font);
-  margin: 0;
   padding: 0;
+  margin: 0 auto;
 }
 
 div{
